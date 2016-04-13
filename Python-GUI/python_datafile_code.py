@@ -238,8 +238,8 @@ class App:
         if self.ser.isOpen():
             self.ser.write('1')
             self.ser.write(self.windStr.get())
-            self.ser.write(self.Kp.get())
-            self.ser.write(self.Kd.get())
+            #self.ser.write(self.Kp.get())
+            #self.ser.write(self.Kd.get())
         else:
             print "Serial port not open!"
 
