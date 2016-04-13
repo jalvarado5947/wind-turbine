@@ -134,7 +134,7 @@ void setup(){
 
 
 void loop(){
-
+  //this while statement is used during communication between both arduinos, not needed for testing the power 
   while(turbine_state == 0){
     
     disengage_brake();
@@ -247,7 +247,8 @@ void loop(){
       
     }
     
-    i[0] = '1';
+    //This line of code is used with the python code. 
+    //i[0] = '1'; If you are not using the python code un comment this line so that you can print out to the command prompt on arduino
     if(i[0] == '1')
     {
       int rpm = 60*rev;
